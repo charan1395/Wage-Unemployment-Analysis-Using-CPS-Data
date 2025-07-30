@@ -1,64 +1,47 @@
-**Wage & Unemployment Analysis Using CPS Data (2017–2024)**
+📌 **CPS-Based Analysis of Wage Inequality and Unemployment Trends in the U.S**.
 
 ----
-This project explores labor market dynamics in the United States by analyzing the Current Population Survey (CPS) data from January 2017 to December 2024. Using statistical and machine learning techniques, we examined wage inequality, gender pay gaps, industry-wise wage trends, and the impact of COVID-19 on unemployment. The findings provide actionable insights for policy makers, HR teams, and economists.
+📄 **Overview**
+
+This project explores wage disparities and labor market dynamics in the U.S. using CPS data from 2017 to 2024. Our analysis addresses five distinct research questions using techniques from clustering, causal inference, random forests, and statistical testing. The goal is to uncover meaningful insights to support HR decisions, public policy, and economic forecasting.
 
 ----
+🧠 **Research Questions & Notebooks**
 
-🧠 Key Objectives
+Is there a significant gender pay gap after accounting for job, education, and experience?
+– Used hypothesis testing (t-tests) within similar role-education groups to assess wage disparity.
 
-Understand how education, industry, and gender impact wages.
+What are the main clusters or segments in the workforce based on wage-driving variables?
+– Applied K-Means clustering to identify patterns across occupation, experience, and industry.
 
-Investigate gender wage disparities across industries and occupations.
+Which features best explain wage differences across industries?
+– Built a Random Forest regression model and analyzed feature importances.
 
-Identify factors driving wage variability using machine learning.
+How do wage levels vary across U.S. regions and industries?
+– Conducted segmented analysis across state and industry categories using EDA and statistical summaries.
 
-Quantify the impact of COVID-19 on unemployment using causal inference.
-
-----
-
-📁 Data Source
-
-Dataset: Current Population Survey (CPS), U.S. Census Bureau & Bureau of Labor Statistics.
-
-Time Frame: Jan 2017 – Dec 2024
-
-Sample Size: Over 390 variables and millions of records.
+What was the causal impact of COVID-19 on unemployment rates?
+– Used the CausalImpact library to quantify the increase in unemployment due to the pandemic.
 
 ----
-🔍 Methodology & Techniques
+🛠️ **Methodology & Techniques**
 
-We began with thorough **data cleaning and preprocessing**, filtering for complete interviews, normalizing income fields, and engineering new features like age buckets, education levels, and industry codes. To statistically validate wage differences across groups, we applied **hypothesis testing** techniques including t-tests and ANOVA.
-
-To uncover hidden segments in the labor force, we used **K-Means clustering** to group individuals based on occupation, experience, and industry. To model wage drivers, we employed a **Random Forest Regressor**, which provided robust predictions and allowed us to assess feature importance. Additionally, we used **feature ablation** techniques to isolate the influence of individual variables while minimizing interaction effects.
-
-To measure the **causal effect of COVID-19 on unemployment**, we applied the CausalImpact framework, enabling us to quantify the increase in unemployment rates that could be directly attributed to the pandemic.
-
-----
-📈 Key Insights
-
-Education drives higher wages: Statistically significant wage differences were found across education levels.
-
-Gender pay gap persists: Men consistently earn more than women across all industries and occupations, even after clustering.
-
-Top wage influencers: Experience, education, occupation, and industry were most predictive of income levels.
-
-COVID-19 Impact: A 2% increase in unemployment was directly attributed to the pandemic using causal inference.
+We began by cleaning and standardizing the CPS dataset, focusing on complete interviews and reliable wage fields. Statistical techniques such as t-tests and ANOVA were used to validate group-wise differences. We used K-Means clustering to uncover structural labor force segments and trained a Random Forest Regressor to model wage influencers. To quantify the pandemic’s effect, we used Bayesian Structural Time Series with CausalImpact, measuring counterfactual unemployment trends.
 
 ----
 🧰 Tools & Technologies
 
-Languages: Python
+Languages & Libraries: Python, Pandas, NumPy, Matplotlib, Seaborn
 
-Techniques: Hypothesis Testing, Clustering, Causal Impact Analysis, Random Forests
+Statistical Methods: T-tests, ANOVA, Clustering, Causal Impact, Random Forest
 
-Libraries: Pandas, Scikit-learn, Matplotlib, CausalImpact, NumPy
+ML Libraries: Scikit-learn, CausalImpact (via tfcausalimpact), Yellowbrick
 
-----
-✅ Business Impact
+Domain: Labor Economics, Public Policy, Workforce Analytics
+
+✅ **Business Impact**
 
 This project provides a framework for:
-
 HR teams to create data-backed compensation strategies.
 
 Policymakers to understand the socioeconomic impact of crises like COVID-19.
