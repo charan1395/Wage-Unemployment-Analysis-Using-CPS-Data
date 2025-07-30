@@ -25,13 +25,11 @@ Sample Size: Over 390 variables and millions of records.
 
 ----
 🔍 Methodology & Techniques
-**Task**	                                                                 **Techniques Used**
-Data Cleaning & Preprocessing                                          	Filtering complete interviews, age & education bucketing, income normalization
-Hypothesis Testing	                                                    T-tests, ANOVA to validate wage differences
-Clustering	                                                            K-Means to segment individuals by industry, experience, occupation
-Regression Modeling	                                                    Random Forest Regressor to determine wage predictors
-Feature Importance	                                                    Feature Ablation to understand variable influence excluding interaction effects
-Causal Inference	                                                      CausalImpact to isolate COVID’s impact on unemployment
+We began with thorough **data cleaning and preprocessing**, filtering for complete interviews, normalizing income fields, and engineering new features like age buckets, education levels, and industry codes. To statistically validate wage differences across groups, we applied **hypothesis testing** techniques including t-tests and ANOVA.
+
+To uncover hidden segments in the labor force, we used **K-Means clustering** to group individuals based on occupation, experience, and industry. To model wage drivers, we employed a **Random Forest Regressor**, which provided robust predictions and allowed us to assess feature importance. Additionally, we used **feature ablation** techniques to isolate the influence of individual variables while minimizing interaction effects.
+
+To measure the **causal effect of COVID-19 on unemployment**, we applied the CausalImpact framework, enabling us to quantify the increase in unemployment rates that could be directly attributed to the pandemic.
 
 ----
 📈 Key Insights
