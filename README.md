@@ -6,6 +6,7 @@ This project explores labor market dynamics in the United States by analyzing th
 ----
 
 🧠 Key Objectives
+
 Understand how education, industry, and gender impact wages.
 
 Investigate gender wage disparities across industries and occupations.
@@ -17,6 +18,7 @@ Quantify the impact of COVID-19 on unemployment using causal inference.
 ----
 
 📁 Data Source
+
 Dataset: Current Population Survey (CPS), U.S. Census Bureau & Bureau of Labor Statistics.
 
 Time Frame: Jan 2017 – Dec 2024
@@ -25,6 +27,7 @@ Sample Size: Over 390 variables and millions of records.
 
 ----
 🔍 Methodology & Techniques
+
 We began with thorough **data cleaning and preprocessing**, filtering for complete interviews, normalizing income fields, and engineering new features like age buckets, education levels, and industry codes. To statistically validate wage differences across groups, we applied **hypothesis testing** techniques including t-tests and ANOVA.
 
 To uncover hidden segments in the labor force, we used **K-Means clustering** to group individuals based on occupation, experience, and industry. To model wage drivers, we employed a **Random Forest Regressor**, which provided robust predictions and allowed us to assess feature importance. Additionally, we used **feature ablation** techniques to isolate the influence of individual variables while minimizing interaction effects.
@@ -43,6 +46,7 @@ COVID-19 Impact: A 2% increase in unemployment was directly attributed to the pa
 
 ----
 🧰 Tools & Technologies
+
 Languages: Python
 
 Techniques: Hypothesis Testing, Clustering, Causal Impact Analysis, Random Forests
@@ -51,6 +55,7 @@ Libraries: Pandas, Scikit-learn, Matplotlib, CausalImpact, NumPy
 
 ----
 ✅ Business Impact
+
 This project provides a framework for:
 
 HR teams to create data-backed compensation strategies.
