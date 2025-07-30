@@ -36,6 +36,7 @@ To measure the **causal effect of COVID-19 on unemployment**, we applied the Cau
 
 ----
 📈 Key Insights
+
 Education drives higher wages: Statistically significant wage differences were found across education levels.
 
 Gender pay gap persists: Men consistently earn more than women across all industries and occupations, even after clustering.
